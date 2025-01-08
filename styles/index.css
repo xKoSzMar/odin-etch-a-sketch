@@ -78,6 +78,10 @@ body {
 }
 
 #grid {
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
   min-width: 800px;
   max-width: 800px;
   min-height: 800px;
