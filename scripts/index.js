@@ -3,6 +3,7 @@ const data = {
   resButton: document.querySelector("#resetButton"),
   numInput: document.querySelector("#number"),
   colorInput: document.querySelector("#color"),
+  paintingControl: document.querySelector("#paintingControl"),
   grid: document.querySelector("#grid"),
   gridWidth: document.querySelector("#grid").offsetWidth,
   gridHeight: document.querySelector("#grid").offsetHeight,
@@ -27,7 +28,14 @@ data.colorInput.addEventListener("change", () => {
   data.currentColor = data.colorInput.value;
 });
 
-data.grid.addEventListener("click", () => (data.painting = !data.painting));
+data.grid.addEventListener("click", () => {
+  data.painting = !data.painting;
+  if (data.painting) {
+    data.paintingControl.style.backgroundColor = "limeGreen";
+  } else {
+    data.paintingControl.style.backgroundColor = "orangeRed";
+  }
+});
 
 function generateGrid() {
   if (data.numInput.value === "") {
