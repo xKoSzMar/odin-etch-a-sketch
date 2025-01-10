@@ -49,6 +49,7 @@ body {
 
 #generateButton {
   background-color: lightskyblue;
+  user-select: none;
 }
 
 #generateButton:hover {
@@ -64,6 +65,7 @@ body {
 
 #resetButton {
   background-color: tomato;
+  user-select: none;
 }
 
 #resetButton:hover {
@@ -75,6 +77,13 @@ body {
   background-color: red;
   transition: 0.1s ease;
   font-weight: bold;
+}
+
+#paintingControl {
+  background-color: orangered;
+  border-radius: 20px;
+  padding: 4px;
+  user-select: none;
 }
 
 #grid {
