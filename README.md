@@ -18,6 +18,7 @@ At first you will see a blank sketchpad witch two inputs and two buttons:
 - **Generate** button
 - color input
 - **Reset** button
+- Painting Control (when painting is enabled it will have limeGreen background)
 
 Before you begin you have to enter the number of grid squares per wall and click the **Generate** button.
 
